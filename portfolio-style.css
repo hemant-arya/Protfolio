@@ -1,116 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
-        *{
-            margin: 0px;
-            padding: 0px;
+body{
+    overflow-y: auto;
+}
+
+nav{
+    background-color: red;
+    padding: 10px;
+    margin: 0px !important;
+}
+
+.nav{
+    float: right;
+}
+
+#profile .row {
+    background-image: url(./assets/Profile-1.jpeg);
+    background-size: 32%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    
+  }
+
+#profile .row > div{
+    margin: auto 0% auto auto;
+    text-transform: uppercase;
+  }
+
+#profile .row > div h1{
+    background-color: red;
+    padding: 10px;
+}
+
+#profile .row > div h2{
+    background-color: #fff;
+    padding: 10px;
+    font-size: large;
+}
+
+#profile .row > div h3{
+    font-size: large;
+    font-weight: 500;
+}
+
+#experiences {
+    background-image: url(./assets/ces-head1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: 10px;
+}
+
+#experiences .org {
+    background-color: red;
+}
+
+#achievements .row{
+    background-image: url(./assets/achievement.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 40%;
+    background-position: 0;
+}
+
+#achievements .row div{
+    margin-left: 30%;
+}
+
+#education .row{
+    background-image: url(./assets/education.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 35%;
+    background-position: 80% 60%;
+}
+
+#education .text-danger{
+    color: red !important;
+}
+#education .bg-danger{
+    background-color: red !important;
+}
+
+#skills .row{
+    background-image: url(./assets/skills.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 40%;
+    background-position: 0;
+}
+
+#skills .row div{
+    margin-left: 40%;
+}
+
+#skills span.progress{
+    margin: -20px 20% 10px;
+    color: #000 !important;
+}
+
+
+#contact .row{
+    background-image: url(./assets/contact.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 35%;
+    background-position: 80% 60%;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+#contact .row div{
+    margin: 15%;
+}
+
+#profile, #profile .row, #achievements , #achievements .row, #education, #education .row, #skills, #skills .row, #contact, #contact .row{
+    height: 100vh;
+}
+
+#profile, #achievements, #skills {
+    background-color: #000;
+}
+
+h2{
+    margin-top: 70px !important;
+    margin-bottom: 20px !important;
+}
+
+@media screen and (max-width: 796px) {
+    #profile, #profile .row, #achievements , #achievements .row, #education, #education .row, #skills, #skills .row, #contact, #contact .row{
+        height: auto;
+    }
+
+    div{
+        margin: 0px !important;
+        background-size: 100% !important;
+        background-position: 0% !important;
+    }
+    
+    nav{
+       display:none !important;
         }
 
-        nav{
-            background-color: red;
-            padding: 0px;
-            margin: 0px !important;
-        }
-
-        #profile .row{
-            background-color: black;
-        }
-
-        #profile .row > div:nth-child(1){
-            height: 100vh;
-            background-image: url(./assets/Profile-1.jpeg);
-            background-size: 32%;
-            background-repeat: no-repeat;
-            background-attachment:fixed;
-          }
+#profile, #profile .row{
+    height: 500px !important;
+    margin-top: 0% !important;
+}
 
 
-        #profile .row > div:nth-child(2){
-            margin: auto;
-            text-transform: uppercase;
-          }
+#profile .row div{
+    margin-top: 80% !important;
+}
 
-        #profile .row > div h1{
-            background-color: red;
-            padding: 10px;
-        }
+#profile h1{
+background-color: rgb(255, 0, 0, .3) !important;
+}
 
-        #profile .row > div h2{
-            background-color: #fff;
-            padding: 10px;
-            font-size: large;
-        }
+#profile h2{
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    }
 
-        #profile .row > div h3{
-            font-size: large;
-            font-weight: 500;
-        }
+    #contact .row{
+        background-position: 0% 120% !important;        
+    }
 
-        #experiences {
-            background-image: url(./assets/ces-head1.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100%;
-            background-position: 10px;
-        }
+    #contact .row div, #education .row div{
+        background-color: rgba(251, 249, 249, 0.5);
+        padding: 10px !important;        
+    }
 
-        #experiences .org {
-            background-color: red;
-        }
-
-        #achievements {
-            height: 100vh;
-            background-color: #000;
-        }
-        #achievements .row{
-            background-image: url(./assets/achievement.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 40%;
-            background-position: 0;
-            height: 100vh;
-        }
-
-        #education {
-            height: 100vh;
-        }
-        #education .row{
-            background-image: url(./assets/education.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 35%;
-            background-position: 80% 60%;
-            height: 100vh;
-        }
-
-        #education .text-danger{
-            color: red !important;
-        }
-        #education .bg-danger{
-            background-color: red !important;
-        }
-
-        #skills {
-            height: 100vh;
-            background-color: #000;
-        }
-        #skills .row{
-            background-image: url(./assets/skills.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 40%;
-            background-position: 0;
-            height: 100vh;
-        }
-
-        #contact {
-            height: 100vh;
-        }
-        #contact .row{
-            background-image: url(./assets/contact.png);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 35%;
-            background-position: 80% 60%;
-            height: 100vh;
-            font-weight: 600;
-            font-size: 1.25rem;
-        }
+    #achievements .row div, #skills .row div{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px !important;        
+    }
+}
