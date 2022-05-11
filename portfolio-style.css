@@ -1,0 +1,116 @@
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav{
+            background-color: red;
+            padding: 0px;
+            margin: 0px !important;
+        }
+
+        #profile .row{
+            background-color: black;
+        }
+
+        #profile .row > div:nth-child(1){
+            height: 100vh;
+            background-image: url(./assets/Profile-1.jpeg);
+            background-size: 32%;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+          }
+
+
+        #profile .row > div:nth-child(2){
+            margin: auto;
+            text-transform: uppercase;
+          }
+
+        #profile .row > div h1{
+            background-color: red;
+            padding: 10px;
+        }
+
+        #profile .row > div h2{
+            background-color: #fff;
+            padding: 10px;
+            font-size: large;
+        }
+
+        #profile .row > div h3{
+            font-size: large;
+            font-weight: 500;
+        }
+
+        #experiences {
+            background-image: url(./assets/ces-head1.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            background-position: 10px;
+        }
+
+        #experiences .org {
+            background-color: red;
+        }
+
+        #achievements {
+            height: 100vh;
+            background-color: #000;
+        }
+        #achievements .row{
+            background-image: url(./assets/achievement.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 40%;
+            background-position: 0;
+            height: 100vh;
+        }
+
+        #education {
+            height: 100vh;
+        }
+        #education .row{
+            background-image: url(./assets/education.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 35%;
+            background-position: 80% 60%;
+            height: 100vh;
+        }
+
+        #education .text-danger{
+            color: red !important;
+        }
+        #education .bg-danger{
+            background-color: red !important;
+        }
+
+        #skills {
+            height: 100vh;
+            background-color: #000;
+        }
+        #skills .row{
+            background-image: url(./assets/skills.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 40%;
+            background-position: 0;
+            height: 100vh;
+        }
+
+        #contact {
+            height: 100vh;
+        }
+        #contact .row{
+            background-image: url(./assets/contact.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 35%;
+            background-position: 80% 60%;
+            height: 100vh;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
