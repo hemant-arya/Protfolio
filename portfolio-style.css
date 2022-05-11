@@ -183,6 +183,6 @@ background-color: rgb(255, 0, 0, .3) !important;
     }
 
     #experiences .row div:first-child>span{
-float: left;
+float: left !important;
     }
 }
